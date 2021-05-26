@@ -124,3 +124,72 @@ img{
   color: var(--link-light);
   text-decoration: none;
 }
+/* site-header__main */
+.site-header__main {
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+.logo {
+  margin-right: 158px;
+}
+.site-header__main__form {
+  width: 500px;
+  margin: 0;
+  padding: 13px 16px;
+  background-color: var(--card-bg);
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+}
+.site-header__main__select{
+  margin-right: 24px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+}
+.site-header__main__select > option{
+  background-color: var(--card-bg);
+}
+.site-header__main__select, .site-header__main__input {
+  border: none;
+  background-color: transparent;
+  outline: transparent;
+}
+.site-header__main__input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-grow: 1;
+  padding-left: 24px;
+  border-left: 1px solid #D1D1D1;
+  color: #A9A9A9;
+  font-family: var(--second-font);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  background-image: url("../img/search.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.person-blog {
+  align-self: stretch;
+  margin-left: auto;
+}
+.person-blog-profil, .person-blog-korzina{
+  padding: 12px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.person-blog-profil {
+  margin-right: 34px;
+  background-image: url("../img/ic-actions-user.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.person-blog-korzina {
+  background-image: url("../img/ic-ecommerce-basket.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
