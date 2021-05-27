@@ -1,27 +1,27 @@
-// function dropdown(index){
-//     var dropdowns=document.getElementsByClassName("product-list");
-//     for (var i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//     var s=index+"";
-//     document.getElementById(s).classList.toggle("show");
-//   }
-//   window.onclick = function(event) {
-//     if (!event.target.matches('.nav-button')) {
-//       var dropdowns = document.getElementsByClassName("product-list");
-//       var i;
-//       for (i = 0; i < dropdowns.length; i++) {
-//         var openDropdown = dropdowns[i];
-//         if (openDropdown.classList.contains('show')) {
-//           openDropdown.classList.remove('show');
-//         }
-//       }
-//     }
-//   }
-let togglerParent = document.querySelector('.site-header__bottom__container')
+let dropdownBtn = document.querySelectorAll('.dropdown__button');
+let dropdownList = document.querySelectorAll('.dropdown__list');
+dropdownBtn.forEach((item, i) =>{
+    item.addEventListener('click', () =>{
+        if(dropdownList){
+            dropdownList.forEach(element =>{
+                element.classList.remove('dropdown__list--open');
+            })
+            dropdownList[i].classList.toggle('dropdown__list--open');
+        }
+    })
+})
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropdown__button')) {
+        dropdownList.forEach(item =>{
+            if(item.classList.contains('dropdown__list--open')){
+                item.classList.remove('dropdown__list--open')
+            }
+        })
+    }
+  }
+
+let togglerParent = document.querySelector('.site-header__bottom__container');
 
 function createToggler() {
     let menuBtn = document.createElement('button');
