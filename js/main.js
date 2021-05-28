@@ -26,12 +26,12 @@ let togglerParent = document.querySelector('.site-header__bottom__container');
 function createToggler() {
     let menuBtn = document.createElement('button');
     menuBtn.textContent = 'Menu';
-    menuBtn.classList.add('menu');
+    menuBtn.classList.add('nav-menu');
 
     togglerParent.appendChild(menuBtn);
 }
 createToggler()
-let togglerBtn = document.querySelector('.menu');
+let togglerBtn = document.querySelector('.nav-menu');
 togglerBtn.addEventListener('click', () =>{
     document.querySelector('.header__bottom__list').classList.toggle('header__bottom__list--open');
 })
