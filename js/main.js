@@ -35,3 +35,20 @@ let togglerBtn = document.querySelector('.nav-menu');
 togglerBtn.addEventListener('click', () =>{
     document.querySelector('.header__bottom__list').classList.toggle('header__bottom__list--open');
 })
+
+// carousel
+const config = {
+    type: 'carousel',
+    perView: 4,
+    gap: 32,
+    focusAt: '0',   
+    breakpoints: {
+        1200: {
+        perView: 3
+        },
+        800: {
+        perView: 2
+        }
+    }
+}
+new Glide('.glide', config).mount()

@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ECommerce web site</title>
   <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/glide.core.css">
+  <link rel="stylesheet" href="css/glide.theme.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -134,45 +136,287 @@
 
   <!-- MAIN  -->
   <main class="home-main">
-    <div class="container menu-product-container">
-      <div class="menus">
-        <section class="menu">
-          <h2 class="menu__title">Category menu</h2>
-          <div class="menu__links">
-            <a href="#" class="menu__link">Bakery</a>
-            <a href="#" class="menu__link">Fruit and vegetables</a>
-            <a href="#" class="menu__link">Meat and fish</a>
-            <a href="#" class="menu__link">Drinks</a>
-            <a href="#" class="menu__link">Kitchen</a>
+    <!-- menu-product  -->
+    <section class="menu-product">
+      <div class="container menu-product-container">
+        <div class="menus">
+          <section class="menu">
+            <h2 class="menu__title">Category menu</h2>
+            <div class="menu__links">
+              <a href="#" class="menu__link">Bakery</a>
+              <a href="#" class="menu__link">Fruit and vegetables</a>
+              <a href="#" class="menu__link">Meat and fish</a>
+              <a href="#" class="menu__link">Drinks</a>
+              <a href="#" class="menu__link">Kitchen</a>
+            </div>
+            <a href="#" class="menu__button">More categories</a>
+          </section>
+  
+          <section class="menu">
+            <h2 class="menu__title">Best selling products</h2>
+            <div class="menu__links">
+              <a href="#" class="menu__link">Kitchen</a>
+              <a href="#" class="menu__link">Meat and fish</a>
+              <a href="#" class="menu__link">Special nutrition</a>
+              <a href="#" class="menu__link">Pharmacy</a>
+              <a href="#" class="menu__link">Baby</a>
+            </div>
+            <a href="#" class="menu__button">More products</a>
+          </section>
+  
+          <section class="menu">
+            <h2 class="menu__title">Best from Farmers</h2>
+            <div class="menu__links">
+              <a href="#" class="menu__link">Carrots</a>
+              <a href="#" class="menu__link">Tomatoes</a>
+              <a href="#" class="menu__link">Potatoes</a>
+              <a href="#" class="menu__link">Chicken</a>
+              <a href="#" class="menu__link">Pork</a>
+            </div>
+            <a href="#" class="menu__button">More products</a>
+          </section>
+        </div>
+        
+        <div class="products">
+          <div class="banners flex">
+            <section class="banner">
+              <p class="baner__text">Banner subfocus</p>
+              <h2 class="banner__title">Space for heading</h2>
+              <a href="#" class="banner__link">Read recepies</a>
+            </section>
+            <section class="banner">
+              <p class="baner__text">Banner subfocus</p>
+              <h2 class="banner__title">Space for heading</h2>
+              <a href="#" class="banner__link">Read recepies</a>
+            </section>
           </div>
-          <a href="#" class="menu__button">More categories</a>
-        </section>
-
-        <section class="menu">
-          <h2 class="menu__title">Best selling products</h2>
-          <div class="menu__links">
-            <a href="#" class="menu__link">Kitchen</a>
-            <a href="#" class="menu__link">Meat and fish</a>
-            <a href="#" class="menu__link">Special nutrition</a>
-            <a href="#" class="menu__link">Pharmacy</a>
-            <a href="#" class="menu__link">Baby</a>
-          </div>
-          <a href="#" class="menu__button">More products</a>
-        </section>
-
-        <section class="menu">
-          <h2 class="menu__title">Best from Farmers</h2>
-          <div class="menu__links">
-            <a href="#" class="menu__link">Carrots</a>
-            <a href="#" class="menu__link">Tomatoes</a>
-            <a href="#" class="menu__link">Potatoes</a>
-            <a href="#" class="menu__link">Chicken</a>
-            <a href="#" class="menu__link">Pork</a>
-          </div>
-          <a href="#" class="menu__button">More products</a>
-        </section>
+  
+          <ul class="products__list">
+            <li class="products__item product">
+              <h3 class="product__title headline__title">Product Title</h3>
+              <p class="product__info headline__info">Space for a small product description </p>
+              <div class="product__footer headline__footer flex">
+                <span class="product__cost">1.48 USD</span>
+                <a href="" class="product__button headline__button" herf="#">Buy now</a>
+              </div>
+              <span class="rebate"></span>
+            </li>
+  
+            <li class="products__item product">
+              <h3 class="product__title">Product Title</h3>
+              <p class="product__info">Space for a small product description </p>
+              <div class="product__footer flex">
+                <span class="product__cost">0.28 USD <small>48.56</small></span>
+                <a href="" class="product__button" herf="#">Buy now</a></div>
+                <span class="rebate">-36%</span>
+            </li>
+            <li class="products__item product">
+              <h3 class="product__title">Product Title</h3>
+              <p class="product__info">Space for a small product description </p>
+              <div class="product__footer flex">
+                <span class="product__cost">1.12 USD <small>48.56</small></span>
+                <a href="" class="product__button" herf="#">Buy now</a>
+              </div>
+              <span class="rebate">-36%</span>
+            </li>
+            <li class="products__item product">
+              <h3 class="product__title">Product Title</h3>
+              <p class="product__info">Space for a small product description </p>
+              <div class="product__footer flex">
+                <span class="product__cost">1.48 USD</span>
+                <a href="" class="product__button" herf="#">Buy now</a>
+              </div>
+              <span class="rebate"></span>
+            </li>
+            <li class="products__item product">
+              <h3 class="product__title">Product Title</h3>
+              <p class="product__info">Space for a small product description </p>
+              <div class="product__footer flex">
+                <span class="product__cost">0.28 USD <small>48.56</small></span>
+                <a href="" class="product__button" herf="#">Buy now</a>
+              </div>
+              <span class="rebate">-36%</span>
+            </li>
+            <li class="products__item product">
+              <h3 class="product__title">Product Title</h3>
+              <p class="product__info">Space for a small product description </p>
+              <div class="product__footer flex">
+                <span class="product__cost">1.12 USD <small>48.56</small></span>
+                <a href="" class="product__button" herf="#">Buy now</a>
+              </div>
+              <span class="rebate">-36%</span>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- carousel -->
+    <section class="carousel">
+      <div class="container section-header__container">
+        <header class="section-header flex">
+          <h2 class="section-header__title">Our customers says</h2>
+          <button class="section-header__button" type="button">Button</button>
+        </header>
+      </div>
+
+      <div class="container carousel__main">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides comments">
+              <li class="glide__slide comment">
+                <a href="#" class="comment__link alex">
+                  <p class="comment__text">
+                    “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+                  </p>
+                  <span class="comment__owner">Name and Surname</span>
+                </a>
+              </li>
+              
+              <li class="glide__slide comment">
+                <a href="#" class="comment__link nick">
+                  <p class="comment__text">
+                    “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+                  </p>
+                  <span class="comment__owner">Name and Surname</span>
+                </a>
+              </li>
+  
+              <li class="glide__slide comment">
+                <a href="#" class="comment__link julieta">
+                  <p class="comment__text">
+                    “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+                  </p>
+                  <span class="comment__owner">Name and Surname</span>
+                </a>
+              </li>
+  
+              <li class="glide__slide comment">
+                <a href="#" class="comment__link cara">
+                  <p class="comment__text">
+                    “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “
+                  </p>
+                  <span class="comment__owner">Name and Surname</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- headline -->
+    <section class="headline">
+      <div class="container headline__container">
+        <header class="section-header flex headline__header">
+          <h2 class="section-header__title">Section Headline</h2>
+          <button class="section-header__button" type="button">Button</button>
+        </header>
+
+        <ul class="products__list headline__list">
+          <li class="products__item product headline__item">
+            <h3 class="product__title headline__title">Product Title</h3>
+            <p class="product__info headline__info">Space for a small product description </p>
+            <div class="product__footer headline__footer flex">
+              <span class="product__cost">1.48 USD</span>
+              <a href="" class="product__button headline__button" herf="#">Buy now</a>
+            </div>
+            <span class="rebate headline__rebate"></span>
+          </li>
+
+          <li class="products__item product headline__item">
+            <h3 class="product__title headline__title">Product Title</h3>
+            <p class="product__info headline__info">Space for a small product description </p>
+            <div class="product__footer headline__footer flex">
+              <span class="product__cost">0.28 USD <small>48.56</small></span>
+              <a href="" class="product__button headline__button" herf="#">Buy now</a>
+            </div>
+              <span class="rebate headline__rebate">-36%</span>
+          </li>
+
+          <li class="products__item product headline__item">
+            <h3 class="product__title headline__title">Product Title</h3>
+            <p class="product__info headline__info">Space for a small product description </p>
+            <div class="product__footer headline__footer flex">
+              <span class="product__cost">1.12 USD <small>48.56</small></span>
+              <a href="" class="product__button headline__button" herf="#">Buy now</a>
+            </div>
+            <span class="rebate headline__rebate">-36%</span>
+          </li>
+
+          <li class="products__item product headline__item">
+            <h3 class="product__title headline__title">Product Title</h3>
+            <p class="product__info headline__info">Space for a small product description </p>
+            <div class="product__footer headline__footer flex">
+              <span class="product__cost">1.48 USD</span>
+              <a href="" class="product__button headline__button" herf="#">Buy now</a>
+            </div>
+            <span class="rebate headline__rebate"></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="blog-post">
+      <div class="container blog-post__container">
+        <header class="section-header blog-post__header flex">
+          <h2 class="section-header__title blog-post__title">Read our Blog posts</h2>
+          <button class="section-header__button blog-post__button" type="button">Button</button>
+        </header>
+
+        <div class="posts-wrapper flex">
+          <div class="large-post">
+            <span class="large-post__tip">Dinner tips</span>
+            <div class="large-post__info">
+              <h3 class="large-post__title">Our chef tips for a great and tasty dinner ready in 20 minutes</h3>
+              <span class="large-post__author">Author</span>
+              <smal class="large-post__time">17. 6. 2020</smal>
+            </div>
+          </div>
+
+          <div class="middle-post">
+            <span class="middle-post__tip">Vegetable</span>
+            <div class="middle-post__info">
+              <h3 class="middle-post__title">Which vegetable your family will love and want’s eat each day</h3>
+              <span class="middle-post__author">Author</span>
+              <smal class="middle-post__time">15. 6. 2020</smal>
+            </div>
+          </div>
+
+          <ul class="small-posts">
+            <li class="small-post kinda flex">
+              <div class="small-post__info">
+                <h3 class="small-post__title">Salat is kinda good start to your morning routines</h3>
+                <span class="small-post__author">Author</span>
+                <smal class="small-post__time">15. 6. 2020</smal>
+              </div>
+            </li>
+
+            <li class="small-post breakfast flex">
+              <div class="small-post__info">
+                <h3 class="small-post__title">Our chef tips for a great and healthy breakfast</h3>
+                <span class="small-post__author">Author</span>
+                <smal class="small-post__time">15. 6. 2020</smal>
+              </div>
+            </li>
+
+            <li class="small-post breads flex">
+              <div class="small-post__info">
+                <h3 class="small-post__title">Prepare a simple and delicious breads</h3>
+                <span class="small-post__author">Author</span>
+                <smal class="small-post__time">15. 6. 2020</smal>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- SITE FOOTER  -->
@@ -248,7 +492,9 @@
     </div>
   </footer>
 
+  
 
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
